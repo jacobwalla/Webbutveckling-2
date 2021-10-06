@@ -31,7 +31,7 @@ nav{
 }
 
 .header {
-    height: 10vh;
+    height: 14vh;
     width: 100%;
     margin: 20px auto;
     display: flex;
@@ -45,7 +45,7 @@ nav{
     justify-content: center;
     align-items: center;
     gap: 200px;
-    margin-right: 66px;
+    margin-right: 40px;
 }
 
 .logo{
