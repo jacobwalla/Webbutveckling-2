@@ -4,6 +4,7 @@
     --dark-color: #333333;
     --light-color: #4c4f6b;
     --lighter-color: #95afd1;
+    --hover-color: #4c4f6b98;
     --body-font: 'Staatliches', cursive;
     --bigger-font: 1.5rem;
     --biggest-font: 2rem;
@@ -51,6 +52,10 @@ nav{
 .logo{
     width: 150px;
     margin-left: 40px;
+    transition: all 0.3s;
+}
+.logo:hover{
+    opacity: 70%;
 }
 
 .products {
@@ -105,7 +110,7 @@ nav{
     transition: all 0.3s;
 }
 .header button:hover{
-    color: var(--lighter-color);
+    color: var(--hover-color);
 }
 
 .homeBtn{
@@ -118,7 +123,7 @@ nav{
     transition: all 0.3s;
 }
 .homeBtn:hover{
-    color: var(--lighter-color);
+    color: var(--hover-color);
 }
 
 .faqBtn {
@@ -131,7 +136,7 @@ nav{
     transition: all 0.3s;
 }
 .faqBtn:hover {
-    color: var(--lighter-color);
+    color: var(--hover-color);
 }
 
 #shCart a{
@@ -142,7 +147,7 @@ nav{
     padding: 33px;
 }
 #shCart a:hover{
-    color: var(--lighter-color);
+    color: var(--hover-color);
 }
 
 .products button:focus+ul {
@@ -196,15 +201,16 @@ section{
     font-size: var(--bigger-font);
     margin: 1rem 0 1.8rem;
     top: 500px;
-    padding: 10px 20px;
+    padding: 10px 30px;
     border-radius: 5px;
     border: none;
-    background: var(--lighter-color);
+    border: solid var(--light-color);
     transition: all 0.3s;
     color: var(--light-color);
     cursor: pointer;
     text-decoration: none;
 }
 .newBtn:hover{
-    background: #c4d8f3;
+    color: var(--hover-color);
+    border: solid var(--hover-color);
 }
