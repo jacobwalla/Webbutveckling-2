@@ -217,14 +217,14 @@ section {
 }
 
 .newBtn:hover {
-    color: var(--hover-color);
-    border: solid var(--hover-color);
+    color: #ffffff;
+    background-color: var(--light-color);
 }
 
 /* Shop */
 
 #shop{
-    margin-top: 6rem;
+    margin-top: 12rem;
 }
 
 .heading {
