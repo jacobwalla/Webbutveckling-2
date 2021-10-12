@@ -259,6 +259,10 @@ section {
     overflow: hidden;
 }
 
+.box .box-img a{
+    cursor: pointer;
+}
+
 .box .box-img img {
     width: 400px;
     height: 100%;
