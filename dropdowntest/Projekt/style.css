@@ -264,11 +264,11 @@ section {
     height: 100%;
     object-fit: cover;
     object-position: center;
-    transition: all 0.3s;
+    transition: all 0.5s;
 }
 
 .box .box-img img:hover {
-    transform: scale(1.2);
+    transform: scale(1.1);
 }
 
 .title-price {
