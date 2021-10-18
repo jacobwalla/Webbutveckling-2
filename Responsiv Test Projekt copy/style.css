@@ -29,6 +29,20 @@ section {
     padding: 2rem 9%;
 }
 
+.heading {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 4rem;
+    color: var(--dark-color);
+    padding: 1rem;
+    margin-bottom: 5rem;
+}
+
+.heading span {
+    text-transform: uppercase;
+    color: var(--light-color);
+}
+
 /* Header */
 
 header {
@@ -48,6 +62,7 @@ header {
 header .logo {
     width: 130px;
 }
+
 header .logo:hover {
     opacity: 70%;
 }
@@ -68,6 +83,7 @@ header .navbar ul li a {
     margin: 0 3rem;
     font-weight: 600;
     display: block;
+    cursor: pointer;
 }
 
 header .navbar ul li a:hover {
@@ -111,7 +127,7 @@ header .sh-cart a:hover {
     color: var(--light-color);
 }
 
-#menu{
+#menu {
     font-size: 4rem;
     color: var(--dark-color);
     cursor: pointer;
@@ -123,7 +139,7 @@ header .sh-cart a:hover {
 .home {
     padding: 0;
     position: relative;
-    min-height: 100vh;
+    min-height: 130vh;
     display: flex;
     align-items: center;
 }
@@ -171,13 +187,68 @@ header .sh-cart a:hover {
     background-color: var(--dark-color);
 }
 
+/* Trending Products */
+
+.products {
+    padding: 5rem;
+}
+
+.products .product-kontainer {
+    display: flex;
+    flex: wrap;
+    flex-direction: row;
+    gap: 1.5rem;
+}
+
+.products .product-kontainer .product {
+    border: .1rem solid rgba(0, 0, 0, .1);
+    border-radius: .5rem;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    background-color: #ffffff;
+    flex: 1 1 30rem;
+    width: auto;
+}
+
+.products .product-kontainer .product .content {
+    padding: 1.5rem;
+}
+
+.products .product-kontainer .product .content h3 {
+    color: var(--dark-color);
+    font-size: 2.5rem;
+}
+
+.products .product-kontainer .product .content .price {
+    color: var(--dark-color);
+    font-size: 2rem;
+    font-weight: 600;
+    padding: 1rem 0;
+}
+
+.products .product-kontainer .product img {
+    width: 30rem;
+    margin: 6rem 2rem;
+    object-fit: cover;
+    object-position: center;
+}
+
+.products .product-kontainer .product:hover img {
+    transform: scale(1.1);
+}
 
 
 
 
 
 
+@media (max-width:1440px) {
 
+    .home {
+        min-height: 110vh;
+    }
+}
 
 /* Responsiv tings */
 @media (max-width:1024px) {
@@ -188,6 +259,10 @@ header .sh-cart a:hover {
 
     html {
         font-size: 55%;
+    }
+
+    .home {
+        min-height: 95vh;
     }
 
     .home img {
@@ -263,8 +338,8 @@ header .sh-cart a:hover {
     header .sh-cart a {
         margin-left: 0rem;
     }
-    
-    #menu{
+
+    #menu {
         display: initial;
     }
 
@@ -282,17 +357,25 @@ header .sh-cart a:hover {
         height: 1000%;
     }
 
-    header .navbar ul li{
+    header .navbar ul li {
         width: 100%;
     }
 
-    header .navbar ul li ul{
+    header .navbar ul li ul {
         position: relative;
         width: 100%;
     }
 
-    header .navbar ul li ul li{
+    header .navbar ul li ul li {
         background-color: #eee;
+    }
+
+    .heading {
+        font-size: 3rem;
+    }
+
+    .home {
+        min-height: 90vh;
     }
 
     .home img {
@@ -325,6 +408,18 @@ header .sh-cart a:hover {
         color: #fff;
     }
 
+    .products .product-kontainer .product .content h3 {
+        font-size: 2rem;
+    }
+
+    .products .product-kontainer .product .content .price {
+        font-size: 1.5rem;
+    }
+
+    .products .product-kontainer .product img {
+        width: 20rem;
+        margin: 4rem 2rem;
+    }
 
 }
 
@@ -338,6 +433,10 @@ header .sh-cart a:hover {
         font-size: 50%;
     }
 
+    .home {
+        min-height: 65vh;
+    }
+
     .home img {
         width: 180%;
     }
@@ -346,10 +445,17 @@ header .sh-cart a:hover {
         text-align: center;
         width: 100%;
     }
+    header .navbar.active a {
+        font-size: 2.5rem;
+    }
+
+    .heading {
+        font-size: 3rem;
+    }
 
     .front-text {
         margin-left: 2rem;
-        margin-bottom: 40rem;
+        margin-bottom: 0rem;
         background-color: rgba(138, 138, 138, 0.7);
         padding: 2rem;
         width: 25rem;
@@ -373,8 +479,28 @@ header .sh-cart a:hover {
         color: #fff;
     }
 
-}
+    .products .product-kontainer {
+        flex-direction: column;
+    }
 
-body {
-    height: 300rem;
+    .products .product-kontainer .product{
+       flex: 1 1 45rem; 
+    }
+    
+
+    .products .product-kontainer .product .content h3 {
+        font-size: 2rem;
+    }
+
+    .products .product-kontainer .product .content .price {
+        font-size: 1.5rem;
+    }
+
+    .products .product-kontainer .product img {
+        width: 25rem;
+        margin: 4rem 2rem;
+    }
+
+    
+    
 }
