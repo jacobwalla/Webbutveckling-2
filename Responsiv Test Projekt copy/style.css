@@ -1,13 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap");
 
 :root {
     --dark-color: #4d4949;
-    --light-color: #7BA9F8;
+    --light-color: #7ba9f8;
 }
 
 * {
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -15,7 +14,7 @@
     border: none;
     text-decoration: none;
     text-transform: capitalize;
-    transition: all .2s ease-out;
+    transition: all 0.2s ease-out;
 }
 
 html {
@@ -56,7 +55,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
 }
 
 header .logo {
@@ -95,7 +94,7 @@ header .navbar ul li ul {
     left: 0;
     width: 20rem;
     background: #fff;
-    border-radius: .5rem;
+    border-radius: 0.5rem;
     display: none;
 }
 
@@ -113,7 +112,7 @@ header .navbar ul li ul li a span {
     font-size: 1.8rem;
 }
 
-header .navbar ul li:hover>ul {
+header .navbar ul li:hover > ul {
     display: initial;
 }
 
@@ -164,7 +163,7 @@ header .sh-cart a:hover {
 .front-text h3 {
     font-size: 4rem;
     color: var(--dark-color);
-    padding-bottom: .5rem;
+    padding-bottom: 0.5rem;
 }
 
 .front-text span {
@@ -176,15 +175,15 @@ header .sh-cart a:hover {
 .front-text .btn {
     font-size: 2rem;
     color: var(--dark-color);
-    border: solid .3rem var(--dark-color);
-    border-radius: .5rem;
+    border: solid 0.1rem var(--dark-color);
     padding: 1rem;
     text-align: center;
 }
 
 .front-text .btn:hover {
-    color: var(--light-color);
-    background-color: var(--dark-color);
+    color: #fff;
+    border: solid 0.1rem transparent;
+    background-color: rgba(77, 73, 73, 0.5);
 }
 
 /* Trending Products */
@@ -201,8 +200,8 @@ header .sh-cart a:hover {
 }
 
 .products .product-kontainer .product {
-    border: .1rem solid rgba(0, 0, 0, .1);
-    border-radius: .5rem;
+    border: 0.1rem solid rgba(0, 0, 0, 0.1);
+    border-radius: 0.5rem;
     text-align: center;
     position: relative;
     overflow: hidden;
@@ -238,21 +237,14 @@ header .sh-cart a:hover {
     transform: scale(1.1);
 }
 
-
-
-
-
-
-@media (max-width:1440px) {
-
+@media (max-width: 1440px) {
     .home {
         min-height: 110vh;
     }
 }
 
 /* Responsiv tings */
-@media (max-width:1024px) {
-
+@media (max-width: 1024px) {
     header .sh-cart a {
         margin-left: 12rem;
     }
@@ -285,15 +277,12 @@ header .sh-cart a:hover {
     .front-text .btn {
         width: 70%;
         font-size: 2rem;
-        border: solid .3rem var(--dark-color);
-        padding: .5rem;
+        border: solid 0.3rem var(--dark-color);
+        padding: 0.5rem;
     }
-
 }
 
-
-@media (max-width:991px) {
-
+@media (max-width: 991px) {
     header .sh-cart a {
         margin-left: 12rem;
     }
@@ -301,7 +290,6 @@ header .sh-cart a:hover {
     html {
         font-size: 55%;
     }
-
 
     header {
         padding: 1rem;
@@ -327,14 +315,12 @@ header .sh-cart a:hover {
     .front-text .btn {
         width: 70%;
         font-size: 1.5rem;
-        border: solid .3rem var(--dark-color);
-        padding: .5rem;
+        border: solid 0.3rem var(--dark-color);
+        padding: 0.5rem;
     }
-
 }
 
-@media (max-width:768px) {
-
+@media (max-width: 768px) {
     header .sh-cart a {
         margin-left: 0rem;
     }
@@ -403,7 +389,7 @@ header .sh-cart a:hover {
     .front-text .btn {
         width: 60%;
         font-size: 2rem;
-        border: solid .3rem #fff;
+        border: solid 0.3rem #fff;
         padding: 1rem;
         color: #fff;
     }
@@ -420,11 +406,9 @@ header .sh-cart a:hover {
         width: 20rem;
         margin: 4rem 2rem;
     }
-
 }
 
-@media (max-width:425px) {
-
+@media (max-width: 425px) {
     header .sh-cart a {
         margin-left: 1rem;
     }
@@ -474,8 +458,8 @@ header .sh-cart a:hover {
     .front-text .btn {
         width: 50%;
         font-size: 1.5rem;
-        border: solid .3rem #fff;
-        padding: .6rem;
+        border: solid 0.3rem #fff;
+        padding: 0.6rem;
         color: #fff;
     }
 
@@ -483,10 +467,9 @@ header .sh-cart a:hover {
         flex-direction: column;
     }
 
-    .products .product-kontainer .product{
-       flex: 1 1 45rem; 
+    .products .product-kontainer .product {
+        flex: 1 1 45rem;
     }
-    
 
     .products .product-kontainer .product .content h3 {
         font-size: 2rem;
@@ -500,7 +483,4 @@ header .sh-cart a:hover {
         width: 25rem;
         margin: 4rem 2rem;
     }
-
-    
-    
 }
