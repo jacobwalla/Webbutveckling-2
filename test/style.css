@@ -197,7 +197,6 @@ header .sh-cart a:hover {
     flex: wrap;
     flex-direction: row;
     gap: 1.5rem;
-    width: auto;
 }
 
 .products .product-kontainer .product {
@@ -208,6 +207,7 @@ header .sh-cart a:hover {
     overflow: hidden;
     background-color: #ffffff;
     flex: 1 1 30rem;
+    width: auto;
 }
 
 .products .product-kontainer .product .content {
@@ -216,12 +216,12 @@ header .sh-cart a:hover {
 
 .products .product-kontainer .product .content h3 {
     color: var(--dark-color);
-    font-size: 2rem;
+    font-size: 2.5rem;
 }
 
 .products .product-kontainer .product .content .price {
     color: var(--dark-color);
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-weight: 600;
     padding: 1rem 0;
 }
@@ -251,7 +251,7 @@ header .sh-cart a:hover {
     display: flex;
     flex: wrap;
     flex-direction: row;
-    gap: 5rem;
+    gap: 1.5rem;
 }
 
 .product-reviews .review-container .review{
@@ -281,14 +281,6 @@ header .sh-cart a:hover {
 @media (max-width: 1440px) {
     .home {
         min-height: 110vh;
-    }
-
-    .product-reviews .review-container .review{
-        font-size: 1.5rem;
-    }
-    
-    .product-reviews .review-container .review h2{
-        font-size: 2rem;
     }
 }
 
