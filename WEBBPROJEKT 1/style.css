@@ -331,6 +331,56 @@ header .sh-cart a:hover {
     margin-bottom: 5rem;
 }
 
+/* FAQ */
+
+.faq{
+    margin-top: 10rem;
+    height: 10vh;
+}
+
+.box{
+    width: 320px;
+    margin: 100px auto;
+    background: #fff;
+    border-radius: 7px;
+    box-shadow: 1px 2px 4px rgba(0,0,0,.3);
+ }
+ 
+ .box .heading{
+    background: var(--light-color);
+    border-radius: 7px 7px 0px 0px;
+    padding: 10px;
+    color: #fff;
+    text-align: center;
+ }
+ 
+ .faqs{
+    padding: 0px 20px 20px;
+ }
+ 
+ ::-webkit-details-marker{
+    float: right;
+    margin-top: 3px;
+ }
+ 
+ details{
+    background: #f6f6f6;
+    padding: 10px 20px;
+    border-radius: 7px;
+    margin-top: 20px;
+    font-family: "Rubik";
+    font-size: 14px;
+    letter-spacing: 1px;
+    cursor: pointer;
+ }
+ 
+ details summary{
+    outline: none;
+ }
+ 
+
+
+
 
 
 
@@ -338,7 +388,7 @@ header .sh-cart a:hover {
 
 @media (max-width: 1440px) {
     .home {
-        min-height: 110vh;
+        min-height: 120vh;
     }
 
     /* Product reviews */
@@ -362,7 +412,7 @@ header .sh-cart a:hover {
     }
 
     .home {
-        min-height: 95vh;
+        min-height: 125vh;
     }
 
     .home img {
@@ -469,7 +519,7 @@ header .sh-cart a:hover {
     }
 
     .home {
-        min-height: 90vh;
+        min-height: 155vh;
     }
 
     .home img {
@@ -540,7 +590,7 @@ header .sh-cart a:hover {
     }
 }
 
-@media (max-width: 425px) {
+@media (max-width: 426px) {
     header .sh-cart a {
         margin-left: 1rem;
     }
@@ -550,7 +600,7 @@ header .sh-cart a:hover {
     }
 
     .home {
-        min-height: 65vh;
+        min-height: 115vh;
     }
 
     .home img {
