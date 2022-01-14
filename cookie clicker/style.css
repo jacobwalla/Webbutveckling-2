@@ -1,0 +1,79 @@
+.kontainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15rem;
+}
+.kontainer2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5rem;
+}
+span{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 400;
+    padding: 1rem;
+    font-size: 25px;
+}
+
+img{
+    width: 50px;
+}
+
+a:hover{
+    cursor: pointer;
+}
+
+button{
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 400;
+    border: none;
+    background-color: rgba(69, 71, 109, 0.5);
+    padding: 0.5rem;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+.gravskopa{
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 400;
+    border: none;
+    background-color: rgba(226, 128, 17, 0.5);
+    padding: 0.5rem;
+}
+
+.gravskopa:hover{
+    cursor: pointer;
+}
+
+.laser{
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 400;
+    border: none;
+    background-color: rgba(253, 0, 219, 0.555);
+    padding: 0.5rem;
+}
+
+.laser:hover{
+    cursor: pointer;
+}
+
+.atombomb{
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 400;
+    border: none;
+    background-color: rgba(248, 0, 0, 0.555);
+    padding: 0.5rem;
+}
+
+.atombomb:hover{
+    cursor: pointer;
+}
+
