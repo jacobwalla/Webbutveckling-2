@@ -13,6 +13,14 @@ header h1 {
     text-align: center;
 }
 
+label{
+    width: 50px;
+    border-radius: 10px;
+    background-color: dodgerblue;
+    color: white;
+    padding: 20px;
+}
+
 form,
 .result-box {
     border-radius: 10px;

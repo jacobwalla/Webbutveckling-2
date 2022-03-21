@@ -63,25 +63,26 @@ h1 span {
     border-radius: 5px;
     box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.2);
 }
-.fråga{
+
+.fråga {
     max-height: 400px;
     min-height: 400px;
     background: #dbe2ee;
     margin: 10px;
     border-radius: 10px;
 }
-.fråga h2{
+.fråga h2 {
     font-size: 30px;
     padding: 30px;
 }
 
-.buttons{
+.buttons-alt {
     display: flex;
     align-items: center;
     justify-content: center;
-    
 }
-.buttons button{
+
+.buttons-alt button {
     width: 130px;
     height: 65px;
     border: none;
@@ -90,19 +91,20 @@ h1 span {
     border-radius: 10px;
     margin: 5px;
     font-size: 18px;
+    transition: all 0.3s;
 }
 
-#nextStage{
+.buttons-alt button:hover {
+    color: #ffffff;
+}
+
+#nextStage {
     background-color: #bcecbc;
     transition: all 0.3s;
 }
-#nextStage:hover{
+#nextStage:hover {
     background-color: #7aff7a;
     color: white;
-}
-
-.hidden{
-    opacity: 0;
 }
 
 .kalkylator {
@@ -113,36 +115,27 @@ h1 span {
     position: relative;
     border-radius: 5px;
     box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.2);
+    transition: all 0.3s;
 }
 
-.resultat {
-    height: 120px;
-}
-
-.value-innan {
+#display {
     text-align: right;
-    height: 20px;
-    margin: 0 20px;
-    padding-top: 20px;
-    font-size: 15px;
-    color: #cfcfcf;
-    font-weight: normal;
-}
-
-.value {
-    text-align: right;
-    height: 60px;
+    height: 100px;
     margin: 10px 20px;
-    font-size: 30px;
+    font-size: 40px;
 }
 
-.knappar {
+.buttons {
     height: 400px;
 }
 
-.special,
-.nmr,
-.tom {
+.button,
+.button-tom {
+    background-color: #dbe2ee;
+    transition: all 0.2s;
+    cursor: pointer;
+    text-align: center;
+    line-height: 40px;
     width: 50px;
     height: 50px;
     margin: 15px;
@@ -152,27 +145,15 @@ h1 span {
     font-weight: bold;
     font-size: 15px;
 }
-.tom {
-    background-color: #eaedef;
+
+#equal {
+    background: #7aff7a;
+    color: white;
 }
-.nmr,
-.special {
-    cursor: pointer;
+#equal:hover {
+    background: #66b366;
 }
-.special:active,
-.nmr:active {
-    font-size: 15px;
-    font-weight: normal;
-}
-.special:focus,
-.nmr:focus,
-.tom:focus {
-    outline: 0;
-}
-button {
-    background-color: #dbe2ee;
-    transition: all 0.2s;
-}
-button:hover {
+
+.button:hover {
     background-color: #989da7;
 }
