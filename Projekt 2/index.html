@@ -1,28 +1,32 @@
 <!DOCTYPE html>
 <html lang="sv">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Calculator</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Quiz</title>
     <link rel="stylesheet" href="style.css">
+    <script defer src="main.js"></script>
 </head>
 <body>
-    <div class="matte-fråga">
-        <div class="fråga">
-            <h2>14 + 15 = ?</h2>
+    <div class="kontainer">
+        <h1 class="title">WELCOME TO <span>JACOBS</span> MATH QUIZ</h1>
+        <div id="q-kontainer" class="hidden">
+            <div id="fråga">Fråga</div>
+            <div id="svarsAlt" class="btnGrid">
+                <button class="btn correct">Svar 1</button>
+                <button class="btn wrong">Svar 2</button>
+                <button class="btn">Svar 3</button>
+                <button class="btn">Svar 4</button>
+            </div>
         </div>
-        <div class="buttons-alt">
-            <button class="answer" id="answer1">15</button>
-            <button class="answer" id="answer2">19</button>
-            <button class="answer" id="answer3">40</button>
-            <button class="answer" id="answer4">34</button>
-            <button id="calcBtn">Calc</button>
-            <button id="nextStage">Next Stage</button>
+        <div class="btnKontainer">
+            <button id="startBtn" class="startBtn btn">Start</button>
+            <button id="nextBtn" class="nextBtn btn hidden">Next</button>
+            <button id="calcBtn" class="calcBtn btn">Calc</button>
         </div>
-
     </div>
     <section>
-        <div class="kalkylator">
+        <div class="kalkylator hidden">
             <div id="display"></div>
             <div class="buttons">
                 <div class="button">C</div>
@@ -48,6 +52,5 @@
             </div>
         </div>
     </section>
-    <script src="index.js"></script>
 </body>
 </html>

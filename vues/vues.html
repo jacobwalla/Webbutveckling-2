@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Vues</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/vue@3"></script>
+    <script defer src="app.js"></script>
+</head>
+<body>
+    <div id="app">
+          <div v-for="album in albums" class="album">
+              <input type="text" v-model="album.title">
+              <input type="text" v-model="album.artist">
+              <select>
+                  <option v-for="genre in genres">{{ genre }}</option>
+              </select>
+              <button @click="removeAlbum(album)">Remove</button>
+          </div>
+          <button v-if="albums.length < 10" @click="addAlbum">Add</button>
+    </div>  
+</body>
+</html>
