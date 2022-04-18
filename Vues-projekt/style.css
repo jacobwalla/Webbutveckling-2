@@ -34,7 +34,7 @@ a,
 button {
     font-family: "Nunito", sans-serif;
     font-weight: 500;
-    font-size: 16px;
+    font-size: 20px;
     color: #313638;
     text-decoration: none;
 }
@@ -68,4 +68,38 @@ header {
 .input-group{
     width: 200px;
     margin: 0;
+}
+
+.active{
+    color: #f04343;
+}
+
+.flex-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contentFP{
+    margin-top: 8rem;
+    display: grid;
+    grid-template-columns: auto;
+}
+
+.contentFP span{
+    color: #f04343;
+}
+
+.contentFP h1{
+    font-weight: normal;
+    font-size: 50px;
+}
+
+.contentFP .btn-rdm{
+    color: white;
+    background-color: #f04343;
+    border: none;
+    border-radius: 20px;
+    width: 130px;
+    height: 40px;
 }
